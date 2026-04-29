@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D Swimming | Learn to Swim</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-d">D</span><span class="logo-swimming">Swimming</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about"    data-key="nav_about">About</a></li>
+        <li><a href="#programs" data-key="nav_programs">Programs</a></li>
+        <li><a href="#why"      data-key="nav_why">Why Us</a></li>
+        <li><a href="#contact"  data-key="nav_contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-icon">🌐</span>
+          <span id="langLabel">中文</span>
+        </button>
+        <a href="#contact" class="btn btn-primary" data-key="nav_enroll">Enrol Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about"    data-key="nav_about">About</a>
+      <a href="#programs" data-key="nav_programs">Programs</a>
+      <a href="#why"      data-key="nav_why">Why Us</a>
+      <a href="#contact"  data-key="nav_contact">Contact</a>
+      <a href="#contact" class="btn btn-primary mobile-enrol" data-key="nav_enroll">Enrol Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge" data-key="hero_badge">Ages 4 – 16 · Beginner Friendly</div>
+      <h1 class="hero-title" data-key="hero_title">Build Confidence.<br>Learn to Swim.</h1>
+      <p class="hero-sub" data-key="hero_sub">
+        Safe, structured, and fun swimming lessons for children — designed with Chinese-speaking families in mind.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary btn-lg" data-key="hero_cta1">Get Started Today</a>
+        <a href="#programs" class="btn btn-outline btn-lg" data-key="hero_cta2">View Programs</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-key="stat1_num">500+</span>
+          <span class="stat-label" data-key="stat1_label">Students Taught</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-key="stat2_num">4–16</span>
+          <span class="stat-label" data-key="stat2_label">Age Range</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-key="stat3_num">100%</span>
+          <span class="stat-label" data-key="stat3_label">Certified Instructors</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-card">
+            <div class="pool-illustration">
+              <div class="wave wave1"></div>
+              <div class="wave wave2"></div>
+              <div class="wave wave3"></div>
+              <div class="swimmer-icon">🏊</div>
+            </div>
+          </div>
+          <div class="about-badge-card">
+            <span class="badge-icon">🏅</span>
+            <div>
+              <div class="badge-title" data-key="about_badge_title">Certified &amp; Safe</div>
+              <div class="badge-sub" data-key="about_badge_sub">All instructors are nationally certified</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label" data-key="about_label">About D Swimming</div>
+          <h2 class="section-title" data-key="about_title">A swimming school built for your family</h2>
+          <p data-key="about_p1">
+            At D Swimming, we believe every child deserves the life skill of swimming. Founded with Chinese-speaking families in mind, we offer bilingual instruction so that parents and children can always feel comfortable and understood.
+          </p>
+          <p data-key="about_p2">
+            Our small-group classes follow a structured, step-by-step curriculum — from first water confidence all the way through to independent swimming. We make every lesson safe, encouraging, and enjoyable.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span data-key="about_f1">Bilingual lessons (English &amp; Mandarin)</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span data-key="about_f2">Small class sizes for personalised attention</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span data-key="about_f3">Structured curriculum for ages 4–16</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span data-key="about_f4">Supportive, child-friendly environment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs section" id="programs">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-key="prog_label">Our Programs</div>
+        <h2 class="section-title" data-key="prog_title">Classes for every age &amp; level</h2>
+        <p class="section-sub" data-key="prog_sub">All programs focus on building water safety, technique, and confidence at the right pace for your child.</p>
+      </div>
+      <div class="programs-grid">
+
+        <div class="program-card">
+          <div class="program-icon-wrap aqua">
+            <span class="program-icon">🐠</span>
+          </div>
+          <div class="program-age-tag" data-key="prog1_age">Ages 4 – 6</div>
+          <h3 class="program-name" data-key="prog1_name">Little Splashers</h3>
+          <p class="program-desc" data-key="prog1_desc">
+            Introducing water for the very first time. Children learn to feel safe and comfortable in the pool through play-based activities and gentle guidance.
+          </p>
+          <ul class="program-outcomes">
+            <li data-key="prog1_o1">Water familiarisation &amp; floating</li>
+            <li data-key="prog1_o2">Breath control basics</li>
+            <li data-key="prog1_o3">Kicking &amp; arm movement introduction</li>
+          </ul>
+          <a href="#contact" class="btn btn-card" data-key="prog_enrol">Enrol Now</a>
+        </div>
+
+        <div class="program-card featured">
+          <div class="featured-ribbon" data-key="prog_popular">Most Popular</div>
+          <div class="program-icon-wrap blue">
+            <span class="program-icon">🏊</span>
+          </div>
+          <div class="program-age-tag" data-key="prog2_age">Ages 7 – 10</div>
+          <h3 class="program-name" data-key="prog2_name">Junior Swimmers</h3>
+          <p class="program-desc" data-key="prog2_desc">
+            Building on the basics to develop proper freestyle and backstroke technique. Children gain the skills and confidence to swim independently.
+          </p>
+          <ul class="program-outcomes">
+            <li data-key="prog2_o1">Freestyle &amp; backstroke technique</li>
+            <li data-key="prog2_o2">Lap swimming endurance</li>
+            <li data-key="prog2_o3">Water safety awareness</li>
+          </ul>
+          <a href="#contact" class="btn btn-card" data-key="prog_enrol">Enrol Now</a>
+        </div>
+
+        <div class="program-card">
+          <div class="program-icon-wrap teal">
+            <span class="program-icon">🌊</span>
+          </div>
+          <div class="program-age-tag" data-key="prog3_age">Ages 11 – 16</div>
+          <h3 class="program-name" data-key="prog3_name">Teen Swimmers</h3>
+          <p class="program-desc" data-key="prog3_desc">
+            Refining technique and building stamina. Older beginners are welcomed in a respectful, non-competitive setting designed for steady progress.
+          </p>
+          <ul class="program-outcomes">
+            <li data-key="prog3_o1">All four strokes introduction</li>
+            <li data-key="prog3_o2">Tumble turns &amp; starts</li>
+            <li data-key="prog3_o3">Goal-based progression</li>
+          </ul>
+          <a href="#contact" class="btn btn-card" data-key="prog_enrol">Enrol Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why section" id="why">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-key="why_label">Why D Swimming</div>
+        <h2 class="section-title" data-key="why_title">What makes us different</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🗣️</div>
+          <h3 data-key="why1_title">Bilingual Instruction</h3>
+          <p data-key="why1_desc">Our instructors teach in both English and Mandarin, so families who speak Chinese at home always feel at ease and fully informed.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">👨‍👩‍👧</div>
+          <h3 data-key="why2_title">Family-Centred Approach</h3>
+          <p data-key="why2_desc">We keep parents involved with regular progress updates and welcome questions at any time — in whatever language you prefer.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔒</div>
+          <h3 data-key="why3_title">Safety First</h3>
+          <p data-key="why3_desc">Strict pool-side supervision, small class sizes (max 6 per instructor), and certified first-aid trained staff at every session.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📈</div>
+          <h3 data-key="why4_title">Structured Progress</h3>
+          <p data-key="why4_desc">Our clear, level-based curriculum means your child always knows what they're working towards and celebrates each milestone.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">😊</div>
+          <h3 data-key="why5_title">Fun &amp; Encouraging</h3>
+          <p data-key="why5_desc">We believe children learn best when they're enjoying themselves. Every class is designed to be positive, patient, and pressure-free.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📅</div>
+          <h3 data-key="why6_title">Flexible Scheduling</h3>
+          <p data-key="why6_desc">Weekend and after-school time slots available to fit around your family's busy schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-key="test_label">Testimonials</div>
+        <h2 class="section-title" data-key="test_title">What parents say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text" data-key="test1_text">"My daughter was terrified of the water. After just 8 weeks at D Swimming, she's floating and kicking on her own. The instructors were so patient and kind — and being able to ask questions in Mandarin made everything so much easier for us."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">W</div>
+            <div>
+              <div class="author-name" data-key="test1_name">Wei Fang</div>
+              <div class="author-role" data-key="test1_role">Parent of 5-year-old</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text" data-key="test2_text">"Both my boys (7 and 11) attend different classes and they absolutely love it. The progress has been amazing. The teachers explain everything clearly in Chinese which helps the kids understand better."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">L</div>
+            <div>
+              <div class="author-name" data-key="test2_name">Li Ming</div>
+              <div class="author-role" data-key="test2_role">Parent of two students</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text" data-key="test3_text">"Our son started as a complete beginner at age 13 and never felt embarrassed — the teen class was perfectly paced and the instructors were very encouraging. Highly recommend D Swimming to every family!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">C</div>
+            <div>
+              <div class="author-name" data-key="test3_name">Chen Jing</div>
+              <div class="author-role" data-key="test3_role">Parent of 13-year-old</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / ENROL -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label" data-key="contact_label">Get In Touch</div>
+          <h2 class="section-title" data-key="contact_title">Ready to make a splash?</h2>
+          <p data-key="contact_sub">Fill in the form and we'll get back to you within 24 hours to discuss the best program for your child.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span data-key="contact_addr">123 Poolside Avenue, Sydney NSW 2000</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <span>0400 000 000</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <span>hello@dswimming.com.au</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕐</span>
+              <span data-key="contact_hours">Mon–Fri 3pm–7pm · Sat–Sun 8am–5pm</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-key="form_parent">Parent / Guardian Name</label>
+                <input type="text" name="parent" placeholder="e.g. Li Wei" required />
+              </div>
+              <div class="form-group">
+                <label data-key="form_child">Child's Name</label>
+                <input type="text" name="child" placeholder="e.g. Mei Mei" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-key="form_age">Child's Age</label>
+                <select name="age" required>
+                  <option value="" data-key="form_age_placeholder">Select age…</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label data-key="form_program">Preferred Program</label>
+                <select name="program" required>
+                  <option value="" data-key="form_prog_placeholder">Select program…</option>
+                  <option value="little" data-key="form_prog1">Little Splashers (4–6)</option>
+                  <option value="junior" data-key="form_prog2">Junior Swimmers (7–10)</option>
+                  <option value="teen"   data-key="form_prog3">Teen Swimmers (11–16)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-key="form_phone">Phone Number</label>
+                <input type="tel" name="phone" placeholder="04XX XXX XXX" required />
+              </div>
+              <div class="form-group">
+                <label data-key="form_email">Email Address</label>
+                <input type="email" name="email" placeholder="you@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-key="form_lang">Preferred Language for Communication</label>
+              <select name="lang">
+                <option value="en"   data-key="form_lang_en">English</option>
+                <option value="zh"   data-key="form_lang_zh">Mandarin Chinese (普通话)</option>
+                <option value="both" data-key="form_lang_both">Both</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-key="form_message">Any questions or special requirements?</label>
+              <textarea name="message" rows="4" data-placeholder-key="form_msg_placeholder" placeholder="e.g. My child has had a bad experience with water before…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-key="form_submit">Send Enquiry</button>
+            <div class="form-success" id="formSuccess">
+              <span>✅</span> <span data-key="form_success">Thank you! We'll be in touch within 24 hours.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-d">D</span><span class="logo-swimming">Swimming</span>
+          </a>
+          <p class="footer-tagline" data-key="footer_tagline">Teaching children to swim with confidence, safety, and joy.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about"    data-key="nav_about">About</a>
+          <a href="#programs" data-key="nav_programs">Programs</a>
+          <a href="#why"      data-key="nav_why">Why Us</a>
+          <a href="#contact"  data-key="nav_contact">Contact</a>
+        </div>
+        <div class="footer-lang">
+          <button class="lang-toggle" id="langToggleFooter">
+            <span class="lang-icon">🌐</span>
+            <span id="langLabelFooter">中文</span>
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-key="footer_copy">© 2026 D Swimming. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
