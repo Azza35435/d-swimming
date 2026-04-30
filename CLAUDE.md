@@ -25,13 +25,21 @@ The `gh` CLI is installed at `~/.local/bin/gh`. Always use it for GitHub operati
 /Users/aaron/.local/bin/gh <command>
 ```
 
-After every meaningful change: stage specific files, commit with a descriptive message, then push:
+**Commit and push after every meaningful change** — do not batch up multiple features into a single commit. The goal is to never lose work. Follow this sequence:
 
 ```bash
-git add <files>
-git commit -m "..."
+git add <specific files>   # never use git add -A or git add .
+git commit -m "concise description of what changed and why"
 git push
 ```
+
+Commit message rules:
+- Use the imperative mood ("Add hero section" not "Added hero section")
+- Lead with the area changed when helpful ("styles: tighten mobile nav padding")
+- Keep the subject line under 72 characters
+- Do not include Claude's co-author trailer unless the user asks
+
+Commit cadence: after each logical unit of work — a new section, a style change, a bug fix, a translation update. When in doubt, commit sooner rather than later.
 
 Remote: `https://github.com/Azza35435/d-swimming` (branch `main`).
 
