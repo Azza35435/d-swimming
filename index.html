@@ -45,38 +45,76 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge" data-key="hero_badge">Ages 4 – 16 · Beginner Friendly</div>
-      <h1 class="hero-title" data-key="hero_title">Build Confidence.<br>Learn to Swim.</h1>
-      <p class="hero-sub" data-key="hero_sub">
-        Safe, structured, and fun swimming lessons for children — designed with Chinese-speaking families in mind.
-      </p>
-      <div class="hero-ctas">
-        <a href="#contact" class="btn btn-primary btn-lg" data-key="hero_cta1">Get Started Today</a>
-        <a href="#programs" class="btn btn-outline btn-lg" data-key="hero_cta2">View Programs</a>
+
+    <!-- Animated background blobs -->
+    <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--3" aria-hidden="true"></div>
+
+    <!-- Floating water drop accents -->
+    <div class="hero-drop hero-drop--a" aria-hidden="true"></div>
+    <div class="hero-drop hero-drop--b" aria-hidden="true"></div>
+    <div class="hero-drop hero-drop--c" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+
+      <!-- LEFT: text content -->
+      <div class="hero-content">
+        <div class="hero-badge" data-key="hero_badge">Ages 4 – 16 · Beginner Friendly</div>
+        <h1 class="hero-title" data-key="hero_title">Build Confidence.<br>Learn to Swim.</h1>
+        <p class="hero-sub" data-key="hero_sub">
+          Safe, structured, and fun swimming lessons for children — designed with Chinese-speaking families in mind.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg" data-key="hero_cta1">Get Started Today</a>
+          <a href="#programs" class="btn btn-outline btn-lg" data-key="hero_cta2">View Programs</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-key="stat1_num">500+</span>
+            <span class="stat-label" data-key="stat1_label">Students Taught</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-key="stat2_num">4–16</span>
+            <span class="stat-label" data-key="stat2_label">Age Range</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-key="stat3_num">100%</span>
+            <span class="stat-label" data-key="stat3_label">Certified Instructors</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num" data-key="stat1_num">500+</span>
-          <span class="stat-label" data-key="stat1_label">Students Taught</span>
+
+      <!-- RIGHT: organic blob image frame -->
+      <div class="hero-visual" aria-hidden="true">
+        <!-- Inline SVG defines the blob clip-path shape -->
+        <svg width="0" height="0" style="position:absolute">
+          <defs>
+            <clipPath id="blobClip" clipPathUnits="objectBoundingBox">
+              <path d="M0.72,0.04 C0.88,0.10 0.98,0.28 0.96,0.48 C0.94,0.68 0.80,0.84 0.62,0.92 C0.44,1.00 0.22,0.98 0.10,0.84 C-0.02,0.70 0.00,0.46 0.08,0.28 C0.16,0.10 0.36,-0.02 0.56,0.00 C0.64,0.01 0.68,0.02 0.72,0.04 Z"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="hero-blob-frame">
+          <!-- Replace the div below with <img src="photo.jpg" alt="Swimmer" style="width:100%;height:100%;object-fit:cover"> when the real photo is ready -->
+          <div class="hero-img-placeholder">
+            <span class="hero-swimmer-emoji">🏊</span>
+          </div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-key="stat2_num">4–16</span>
-          <span class="stat-label" data-key="stat2_label">Age Range</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-key="stat3_num">100%</span>
-          <span class="stat-label" data-key="stat3_label">Certified Instructors</span>
-        </div>
+        <div class="hero-blob-ring"></div>
       </div>
+
     </div>
-    <div class="scroll-indicator">
-      <div class="scroll-dot"></div>
+
+    <!-- Wave divider bleeding into About section -->
+    <div class="hero-wave" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,60 C240,100 480,0 720,50 C960,100 1200,20 1440,60 L1440,100 L0,100 Z" fill="#ffffff"/>
+      </svg>
     </div>
+
   </section>
 
   <!-- ABOUT -->
@@ -242,6 +280,11 @@
 
   <!-- TESTIMONIALS -->
   <section class="testimonials section" id="testimonials">
+    <div class="testimonials-wave" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0,30 C300,90 900,0 1440,50 L1440,0 L0,0 Z" fill="#ffffff"/>
+      </svg>
+    </div>
     <div class="container">
       <div class="section-header">
         <div class="section-label" data-key="test_label">Testimonials</div>
@@ -388,6 +431,11 @@
 
   <!-- FOOTER -->
   <footer class="footer">
+    <div class="footer-wave" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C480,80 960,0 1440,40 L1440,0 L0,0 Z" fill="#ffffff"/>
+      </svg>
+    </div>
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">

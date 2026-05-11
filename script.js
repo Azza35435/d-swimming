@@ -321,7 +321,7 @@ form.addEventListener('submit', e => {
 // ── SCROLL ANIMATIONS ─────────────────────────────────────────
 function initScrollAnimations() {
   const targets = document.querySelectorAll(
-    '.program-card, .why-card, .testimonial-card, .about-grid, .contact-grid, .section-header'
+    '.program-card, .why-card, .testimonial-card, .about-grid, .contact-grid, .section-header, .hero-visual'
   );
   targets.forEach(el => el.classList.add('fade-in'));
 
