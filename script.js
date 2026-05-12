@@ -318,6 +318,106 @@ form.addEventListener('submit', e => {
   setTimeout(() => formSuccess.classList.remove('show'), 6000);
 });
 
+// ── WAVE BACKGROUND ───────────────────────────────────────────
+function initWaveBackground() {
+  const canvas = document.getElementById('waveCanvas');
+  if (!canvas) return;
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+
+  const vertSrc = `
+    attribute vec2 position;
+    void main() {
+      gl_Position = vec4(position, 0.0, 1.0);
+    }
+  `;
+
+  const fragSrc = `
+    #ifdef GL_ES
+    precision mediump float;
+    #endif
+    uniform vec2 uResolution;
+    uniform float uTime;
+    uniform int uDarkTheme;
+
+    vec3 lightPalette(float t) {
+      return mix(vec3(0.9,0.95,1.0), vec3(0.2,0.4,0.8), 0.5+0.5*sin(6.2831*t));
+    }
+    vec3 darkPalette(float t) {
+      return mix(vec3(0.05,0.1,0.2), vec3(0.1,0.6,0.9), 0.5+0.5*cos(6.2831*t));
+    }
+    float wave(vec2 uv, float speed, float offset) {
+      return sin(uv.x*3.0+uTime*speed+offset)*0.3 +
+             cos(uv.y*2.0-uTime*speed*0.5+offset)*0.2;
+    }
+    void main() {
+      vec2 uv = gl_FragCoord.xy / uResolution.xy;
+      uv = uv*2.0 - 1.0;
+      uv.x *= uResolution.x / uResolution.y;
+      float pattern = (wave(uv,1.2,0.0)+wave(uv,0.8,2.0)+wave(uv,1.5,4.0))*0.5;
+      vec3 col = uDarkTheme==1 ? darkPalette(pattern+uTime*0.05)
+                               : lightPalette(pattern+uTime*0.05);
+      gl_FragColor = vec4(col, 1.0);
+    }
+  `;
+
+  function makeShader(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+
+  const prog = gl.createProgram();
+  gl.attachShader(prog, makeShader(gl.VERTEX_SHADER, vertSrc));
+  gl.attachShader(prog, makeShader(gl.FRAGMENT_SHADER, fragSrc));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+
+  // Full-screen triangle — 3 vertices covering all of clip space
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+  const posLoc = gl.getAttribLocation(prog, 'position');
+  gl.enableVertexAttribArray(posLoc);
+  gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+  const uTime       = gl.getUniformLocation(prog, 'uTime');
+  const uResolution = gl.getUniformLocation(prog, 'uResolution');
+  const uDarkTheme  = gl.getUniformLocation(prog, 'uDarkTheme');
+  gl.uniform1i(uDarkTheme, 1);
+
+  const dpr  = Math.min(window.devicePixelRatio || 1, 2);
+  const hero = canvas.parentElement;
+
+  function resize() {
+    const w = hero.clientWidth, h = hero.clientHeight;
+    canvas.width  = Math.round(w * dpr);
+    canvas.height = Math.round(h * dpr);
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    gl.uniform2f(uResolution, w, h);
+  }
+
+  window.addEventListener('resize', resize, { passive: true });
+  resize();
+
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const t0 = performance.now();
+
+  if (reduced) {
+    // Render a single static frame and stop
+    gl.uniform1f(uTime, 0);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  } else {
+    (function loop() {
+      gl.uniform1f(uTime, (performance.now() - t0) / 1000);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+      requestAnimationFrame(loop);
+    })();
+  }
+}
+
 // ── SCROLL ANIMATIONS ─────────────────────────────────────────
 function initScrollAnimations() {
   const targets = document.querySelectorAll(
@@ -345,4 +445,5 @@ document.addEventListener('DOMContentLoaded', () => {
   applyLanguage(savedLang);
 
   initScrollAnimations();
+  initWaveBackground();
 });
