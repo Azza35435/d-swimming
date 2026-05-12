@@ -1,0 +1,1355 @@
+{
+  "version": "2.6",
+  "children": [
+    {
+      "type": "frame",
+      "id": "dswim-root",
+      "x": 0,
+      "y": 0,
+      "name": "D Swimming — Learn to Swim",
+      "clip": true,
+      "width": 1440,
+      "fill": "#ffffff",
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "dswim-nav",
+          "name": "Navbar",
+          "clip": true,
+          "width": "fill_container",
+          "height": 68,
+          "fill": "#fffffff2",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#dde6f0ff"
+          },
+          "padding": [0, 24],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dswim-nav-inner",
+              "name": "Nav inner",
+              "clip": true,
+              "width": 1112,
+              "height": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dswim-logo",
+                  "name": "Logo",
+                  "clip": true,
+                  "gap": 0,
+                  "alignItems": "baseline",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dswim-logo-d",
+                      "fill": "#1a6fc4",
+                      "content": "D",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-logo-rest",
+                      "fill": "#1e293b",
+                      "content": "Swimming",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-nav-links",
+                  "name": "Links",
+                  "clip": true,
+                  "gap": 28,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dswim-nav-about",
+                      "fill": "#475569",
+                      "content": "About",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-nav-prog",
+                      "fill": "#475569",
+                      "content": "Programs",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-nav-why",
+                      "fill": "#475569",
+                      "content": "Why Us",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-nav-contact",
+                      "fill": "#475569",
+                      "content": "Contact",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-nav-actions",
+                  "name": "Actions",
+                  "clip": true,
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-lang",
+                      "name": "Language",
+                      "clip": true,
+                      "fill": "#eef3f9",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#dde6f0"
+                      },
+                      "gap": 6,
+                      "padding": [7, 14],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-lang-label",
+                          "fill": "#1e293b",
+                          "content": "中文",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-nav-cta",
+                      "name": "Enrol Now",
+                      "clip": true,
+                      "fill": "#1a6fc4",
+                      "cornerRadius": 16,
+                      "padding": [12, 24],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-nav-cta-t",
+                          "fill": "#ffffff",
+                          "content": "Enrol Now",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dswim-hero",
+          "name": "Hero",
+          "clip": true,
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "opacity": 1,
+            "rotation": 125,
+            "center": { "x": 0.5, "y": 0.5 },
+            "size": { "width": 1, "height": 1 },
+            "colors": [
+              { "color": "#050d1a", "position": 0 },
+              { "color": "#0d3d72", "position": 0.4 },
+              { "color": "#0096a0", "position": 1 }
+            ]
+          },
+          "padding": [72, 24, 96, 24],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dswim-hero-row",
+              "name": "Hero row",
+              "clip": true,
+              "width": 1112,
+              "gap": 64,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dswim-hero-copy",
+                  "name": "Hero copy",
+                  "clip": true,
+                  "width": 560,
+                  "layout": "vertical",
+                  "gap": 28,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-hero-badge",
+                      "name": "Badge",
+                      "clip": true,
+                      "fill": "#ffffff26",
+                      "cornerRadius": 40,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1.5,
+                        "fill": "#ffffff59"
+                      },
+                      "padding": [8, 20],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-hero-badge-t",
+                          "fill": "#ffffff",
+                          "content": "Ages 4 – 16 · Beginner Friendly",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-hero-title",
+                      "fill": "#ffffff",
+                      "content": "Build Confidence.\nLearn to Swim.",
+                      "lineHeight": 1.08,
+                      "fontFamily": "Inter",
+                      "fontSize": 52,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-hero-sub",
+                      "fill": "#e0edfc",
+                      "content": "Safe, structured, and fun swimming lessons for children — designed with Chinese-speaking families in mind.",
+                      "lineHeight": 1.65,
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-hero-ctas",
+                      "name": "CTAs",
+                      "clip": true,
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dswim-cta-primary",
+                          "name": "Get Started",
+                          "clip": true,
+                          "fill": "#1a6fc4",
+                          "cornerRadius": 28,
+                          "padding": [15, 34],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dswim-cta-primary-t",
+                              "fill": "#ffffff",
+                              "content": "Get Started Today",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dswim-cta-outline",
+                          "name": "View Programs",
+                          "clip": true,
+                          "cornerRadius": 28,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 2,
+                            "fill": "#ffffffa6"
+                          },
+                          "padding": [15, 34],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dswim-cta-outline-t",
+                              "fill": "#ffffff",
+                              "content": "View Programs",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-stats",
+                      "name": "Stats",
+                      "clip": true,
+                      "gap": 24,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dswim-stat1",
+                          "name": "Stat 1",
+                          "clip": true,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dswim-stat1-n",
+                              "fill": "#ffffff",
+                              "content": "500+",
+                              "fontFamily": "Inter",
+                              "fontSize": 28,
+                              "fontWeight": "800"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dswim-stat1-l",
+                              "fill": "#94a3b8",
+                              "content": "Students Taught",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dswim-stat-div",
+                          "width": 1,
+                          "height": 40,
+                          "fill": "#ffffff33"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dswim-stat2",
+                          "name": "Stat 2",
+                          "clip": true,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dswim-stat2-n",
+                              "fill": "#ffffff",
+                              "content": "4–16",
+                              "fontFamily": "Inter",
+                              "fontSize": 28,
+                              "fontWeight": "800"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dswim-stat2-l",
+                              "fill": "#94a3b8",
+                              "content": "Age Range",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dswim-stat-div2",
+                          "width": 1,
+                          "height": 40,
+                          "fill": "#ffffff33"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "dswim-stat3",
+                          "name": "Stat 3",
+                          "clip": true,
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dswim-stat3-n",
+                              "fill": "#ffffff",
+                              "content": "100%",
+                              "fontFamily": "Inter",
+                              "fontSize": 28,
+                              "fontWeight": "800"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dswim-stat3-l",
+                              "fill": "#94a3b8",
+                              "content": "Certified Instructors",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-hero-visual",
+                  "name": "Hero visual",
+                  "clip": true,
+                  "width": 380,
+                  "height": 420,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-blob",
+                      "name": "Blob placeholder",
+                      "clip": true,
+                      "width": 300,
+                      "height": 340,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "opacity": 1,
+                        "rotation": 145,
+                        "center": { "x": 0.5, "y": 0.5 },
+                        "size": { "width": 1, "height": 1 },
+                        "colors": [
+                          { "color": "#155fa0", "position": 0 },
+                          { "color": "#00b4d8", "position": 1 }
+                        ]
+                      },
+                      "cornerRadius": "60%",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-blob-icon",
+                          "fill": "#ffffffd9",
+                          "content": "〰",
+                          "fontFamily": "Inter",
+                          "fontSize": 64,
+                          "fontWeight": "300"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dswim-about",
+          "name": "About",
+          "clip": true,
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "opacity": 1,
+            "rotation": 160,
+            "center": { "x": 0.5, "y": 0.5 },
+            "size": { "width": 1, "height": 1 },
+            "colors": [
+              { "color": "#eef8fc", "position": 0 },
+              { "color": "#f7fafd", "position": 0.6 },
+              { "color": "#e8f0fb", "position": 1 }
+            ]
+          },
+          "padding": [88, 24],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dswim-about-grid",
+              "name": "About grid",
+              "clip": true,
+              "width": 1112,
+              "gap": 64,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dswim-about-card",
+                  "name": "Pool card",
+                  "clip": true,
+                  "width": 420,
+                  "height": 420,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "opacity": 1,
+                    "rotation": 145,
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "size": { "width": 1, "height": 1 },
+                    "colors": [
+                      { "color": "#155fa0", "position": 0 },
+                      { "color": "#00b4d8", "position": 1 }
+                    ]
+                  },
+                  "cornerRadius": "45%",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00b4d848",
+                      "offset": { "x": 0, "y": 20 },
+                      "blur": 50
+                    }
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dswim-about-swimmer",
+                      "fill": "#ffffffe6",
+                      "content": "👤",
+                      "fontFamily": "Inter",
+                      "fontSize": 72,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-about-text",
+                  "name": "About text",
+                  "clip": true,
+                  "width": 560,
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dswim-about-label",
+                      "fill": "#1a6fc4",
+                      "content": "About D Swimming",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-about-title",
+                      "fill": "#1e293b",
+                      "content": "A swimming school built for your family",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 34,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-about-p1",
+                      "fill": "#475569",
+                      "content": "At D Swimming, we believe every child deserves the life skill of swimming. Founded with Chinese-speaking families in mind, we offer bilingual instruction so that parents and children can always feel comfortable and understood.",
+                      "lineHeight": 1.75,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-about-p2",
+                      "fill": "#475569",
+                      "content": "Our small-group classes follow a structured, step-by-step curriculum — from first water confidence all the way through to independent swimming.",
+                      "lineHeight": 1.75,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-features",
+                      "name": "Features",
+                      "clip": true,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-f1",
+                          "fill": "#1e293b",
+                          "content": "✓  Bilingual lessons (English & Mandarin)",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dswim-f2",
+                          "fill": "#1e293b",
+                          "content": "✓  Small class sizes for personalised attention",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dswim-f3",
+                          "fill": "#1e293b",
+                          "content": "✓  Structured curriculum for ages 4–16",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dswim-programs",
+          "name": "Programs",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "#ffffff",
+          "padding": [88, 24],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dswim-prog-header",
+              "name": "Programs header",
+              "clip": true,
+              "width": 720,
+              "layout": "vertical",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dswim-prog-label",
+                  "fill": "#1a6fc4",
+                  "content": "Our Programs",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "text",
+                  "id": "dswim-prog-title",
+                  "fill": "#1e293b",
+                  "content": "Classes for every age & level",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 34,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "dswim-prog-sub",
+                  "fill": "#475569",
+                  "content": "All programs focus on building water safety, technique, and confidence at the right pace for your child.",
+                  "lineHeight": 1.65,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal",
+                  "textAlign": "center"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dswim-prog-row",
+              "name": "Program cards",
+              "clip": true,
+              "width": 1112,
+              "gap": 28,
+              "alignItems": "stretch",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dswim-card1",
+                  "name": "Little Splashers",
+                  "clip": true,
+                  "width": 352,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "opacity": 1,
+                    "rotation": 135,
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "size": { "width": 1, "height": 1 },
+                    "colors": [
+                      { "color": "#f0f8ff", "position": 0 },
+                      { "color": "#ffffff", "position": 1 }
+                    ]
+                  },
+                  "cornerRadius": 28,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 3,
+                    "fill": "#dde6f0"
+                  },
+                  "padding": [36, 28],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-c1-icon",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#d0f4fb",
+                      "cornerRadius": 32,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-c1-emoji",
+                          "fill": "#00b4d8",
+                          "content": "≋",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c1-age",
+                      "fill": "#475569",
+                      "content": "AGES 4 – 6",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c1-name",
+                      "fill": "#1e293b",
+                      "content": "Little Splashers",
+                      "fontFamily": "Inter",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c1-desc",
+                      "fill": "#475569",
+                      "content": "Introducing water for the very first time. Play-based activities and gentle guidance.",
+                      "lineHeight": 1.65,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-c1-btn",
+                      "fill": "#e0edfc",
+                      "cornerRadius": 16,
+                      "padding": [10, 22],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-c1-btn-t",
+                          "fill": "#1a6fc4",
+                          "content": "Enrol Now",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-card2",
+                  "name": "Junior Swimmers",
+                  "clip": true,
+                  "width": 352,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "opacity": 1,
+                    "rotation": 145,
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "size": { "width": 1, "height": 1 },
+                    "colors": [
+                      { "color": "#d0f4fb", "position": 0 },
+                      { "color": "#e0edfc", "position": 0.55 },
+                      { "color": "#ffffff", "position": 1 }
+                    ]
+                  },
+                  "cornerRadius": 40,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 3,
+                    "fill": "#1a6fc4"
+                  },
+                  "padding": [36, 28],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-c2-ribbon",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "opacity": 1,
+                        "rotation": 135,
+                        "center": { "x": 0.5, "y": 0.5 },
+                        "size": { "width": 1, "height": 1 },
+                        "colors": [
+                          { "color": "#ff6b6b", "position": 0 },
+                          { "color": "#ff8e53", "position": 1 }
+                        ]
+                      },
+                      "cornerRadius": 4,
+                      "padding": [6, 12],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-c2-ribbon-t",
+                          "fill": "#ffffff",
+                          "content": "MOST POPULAR",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-c2-icon",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#e0edfc",
+                      "cornerRadius": 32,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-c2-emoji",
+                          "fill": "#1a6fc4",
+                          "content": "≋",
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c2-age",
+                      "fill": "#475569",
+                      "content": "AGES 7 – 10",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c2-name",
+                      "fill": "#1e293b",
+                      "content": "Junior Swimmers",
+                      "fontFamily": "Inter",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c2-desc",
+                      "fill": "#475569",
+                      "content": "Freestyle & backstroke, lap endurance, and water safety — swim independently with confidence.",
+                      "lineHeight": 1.65,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-c2-btn",
+                      "fill": "#e0edfc",
+                      "cornerRadius": 16,
+                      "padding": [10, 22],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-c2-btn-t",
+                          "fill": "#1a6fc4",
+                          "content": "Enrol Now",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-card3",
+                  "name": "Teen Swimmers",
+                  "clip": true,
+                  "width": 352,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "opacity": 1,
+                    "rotation": 135,
+                    "center": { "x": 0.5, "y": 0.5 },
+                    "size": { "width": 1, "height": 1 },
+                    "colors": [
+                      { "color": "#f0f8ff", "position": 0 },
+                      { "color": "#ffffff", "position": 1 }
+                    ]
+                  },
+                  "cornerRadius": 28,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 3,
+                    "fill": "#dde6f0"
+                  },
+                  "padding": [36, 28],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-c3-icon",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#d0f0f2",
+                      "cornerRadius": 32,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-c3-emoji",
+                          "fill": "#0096a0",
+                          "content": "⚡",
+                          "fontFamily": "Inter",
+                          "fontSize": 26,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c3-age",
+                      "fill": "#475569",
+                      "content": "AGES 11 – 16",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c3-name",
+                      "fill": "#1e293b",
+                      "content": "Teen Swimmers",
+                      "fontFamily": "Inter",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-c3-desc",
+                      "fill": "#475569",
+                      "content": "Refining technique and stamina in a respectful, non-competitive setting for older beginners.",
+                      "lineHeight": 1.65,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-c3-btn",
+                      "fill": "#e0edfc",
+                      "cornerRadius": 16,
+                      "padding": [10, 22],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-c3-btn-t",
+                          "fill": "#1a6fc4",
+                          "content": "Enrol Now",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dswim-contact",
+          "name": "Contact",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "#f7fafd",
+          "padding": [88, 24],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dswim-contact-row",
+              "name": "Contact grid",
+              "clip": true,
+              "width": 1112,
+              "gap": 56,
+              "justifyContent": "space_between",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dswim-contact-info",
+                  "name": "Contact info",
+                  "clip": true,
+                  "width": 480,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dswim-contact-label",
+                      "fill": "#1a6fc4",
+                      "content": "Get In Touch",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-contact-title",
+                      "fill": "#1e293b",
+                      "content": "Ready to make a splash?",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-contact-sub",
+                      "fill": "#475569",
+                      "content": "Fill in the form and we'll get back to you within 24 hours to discuss the best program for your child.",
+                      "lineHeight": 1.75,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-contact-lines",
+                      "name": "Details",
+                      "clip": true,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-addr",
+                          "fill": "#1e293b",
+                          "content": "123 Poolside Avenue, Sydney NSW 2000",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dswim-phone",
+                          "fill": "#1e293b",
+                          "content": "0400 000 000",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dswim-email",
+                          "fill": "#1a6fc4",
+                          "content": "hello@dswimming.com.au",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dswim-hours",
+                          "fill": "#475569",
+                          "content": "Mon–Fri 3pm–7pm · Sat–Sun 8am–5pm",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-form-card",
+                  "name": "Form card",
+                  "clip": true,
+                  "width": 520,
+                  "fill": "#ffffff",
+                  "cornerRadius": 28,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#dde6f0"
+                  },
+                  "padding": [32, 28],
+                  "layout": "vertical",
+                  "gap": 16,
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00000014",
+                      "offset": { "x": 0, "y": 8 },
+                      "blur": 28
+                    }
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dswim-form-hint",
+                      "fill": "#475569",
+                      "content": "Parent name · Child name · Age · Program · Phone · Email — Send Enquiry",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-form-submit",
+                      "fill": "#1a6fc4",
+                      "cornerRadius": 16,
+                      "padding": [14, 24],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-form-submit-t",
+                          "fill": "#ffffff",
+                          "content": "Send Enquiry",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dswim-footer",
+          "name": "Footer",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "#050d1a",
+          "padding": [48, 24, 32, 24],
+          "layout": "vertical",
+          "gap": 28,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dswim-footer-inner",
+              "name": "Footer inner",
+              "clip": true,
+              "width": 1112,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dswim-footer-brand",
+                  "name": "Brand",
+                  "clip": true,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-footer-logo",
+                      "gap": 0,
+                      "alignItems": "baseline",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dswim-flogo-d",
+                          "fill": "#1a6fc4",
+                          "content": "D",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dswim-flogo-s",
+                          "fill": "#ffffffd9",
+                          "content": "Swimming",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-footer-tag",
+                      "fill": "#94a3b8",
+                      "content": "Teaching children to swim with confidence, safety, and joy.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-footer-links",
+                  "gap": 28,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dswim-fl1",
+                      "fill": "#cbd5e1",
+                      "content": "About",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-fl2",
+                      "fill": "#cbd5e1",
+                      "content": "Programs",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-fl3",
+                      "fill": "#cbd5e1",
+                      "content": "Why Us",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dswim-fl4",
+                      "fill": "#cbd5e1",
+                      "content": "Contact",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "dswim-footer-copy",
+              "fill": "#64748b",
+              "content": "© 2026 D Swimming. All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
