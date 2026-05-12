@@ -1058,6 +1058,273 @@
         },
         {
           "type": "frame",
+          "id": "dswim-why",
+          "name": "Why Us",
+          "clip": true,
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "opacity": 1,
+            "rotation": 180,
+            "center": { "x": 0.5, "y": 0.5 },
+            "size": { "width": 1, "height": 1 },
+            "colors": [
+              { "color": "#d0f4fb", "position": 0 },
+              { "color": "#ffffff", "position": 1 }
+            ]
+          },
+          "padding": [88, 24],
+          "layout": "vertical",
+          "gap": 48,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dswim-why-head",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "width": 720,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dswim-why-label",
+                  "fill": "#1a6fc4",
+                  "content": "Why D Swimming",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.2
+                },
+                {
+                  "type": "text",
+                  "id": "dswim-why-title",
+                  "fill": "#1e293b",
+                  "content": "What makes us different",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Inter",
+                  "fontSize": 34,
+                  "fontWeight": "800",
+                  "textAlign": "center"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dswim-why-grid",
+              "width": 1112,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dswim-why-r1",
+                  "gap": 24,
+                  "alignItems": "stretch",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-w1",
+                      "width": 355,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "fill": "#ffffff",
+                      "cornerRadius": 40,
+                      "stroke": { "align": "inside", "thickness": 3, "fill": "#dde6f0" },
+                      "padding": [28, 24],
+                      "children": [
+                        { "type": "text", "id": "dswim-w1t", "fill": "#1e293b", "content": "Bilingual Instruction", "fontFamily": "Inter", "fontSize": 16, "fontWeight": "700" },
+                        { "type": "text", "id": "dswim-w1d", "fill": "#475569", "content": "English and Mandarin so families always feel at ease and informed.", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 13, "fontWeight": "normal" }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-w2",
+                      "width": 355,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "fill": "#ffffff",
+                      "cornerRadius": 40,
+                      "stroke": { "align": "inside", "thickness": 3, "fill": "#dde6f0" },
+                      "padding": [28, 24],
+                      "children": [
+                        { "type": "text", "id": "dswim-w2t", "fill": "#1e293b", "content": "Family-Centred Approach", "fontFamily": "Inter", "fontSize": 16, "fontWeight": "700" },
+                        { "type": "text", "id": "dswim-w2d", "fill": "#475569", "content": "Progress updates and questions welcome — in whichever language you prefer.", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 13, "fontWeight": "normal" }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-w3",
+                      "width": 355,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "fill": "#ffffff",
+                      "cornerRadius": 40,
+                      "stroke": { "align": "inside", "thickness": 3, "fill": "#dde6f0" },
+                      "padding": [28, 24],
+                      "children": [
+                        { "type": "text", "id": "dswim-w3t", "fill": "#1e293b", "content": "Safety First", "fontFamily": "Inter", "fontSize": 16, "fontWeight": "700" },
+                        { "type": "text", "id": "dswim-w3d", "fill": "#475569", "content": "Small classes, certified staff, and first-aid trained instructors every session.", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 13, "fontWeight": "normal" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-why-r2",
+                  "gap": 24,
+                  "alignItems": "stretch",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dswim-w4",
+                      "width": 355,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "fill": "#ffffff",
+                      "cornerRadius": 40,
+                      "stroke": { "align": "inside", "thickness": 3, "fill": "#dde6f0" },
+                      "padding": [28, 24],
+                      "children": [
+                        { "type": "text", "id": "dswim-w4t", "fill": "#1e293b", "content": "Structured Progress", "fontFamily": "Inter", "fontSize": 16, "fontWeight": "700" },
+                        { "type": "text", "id": "dswim-w4d", "fill": "#475569", "content": "Level-based curriculum so every child knows their next milestone.", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 13, "fontWeight": "normal" }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-w5",
+                      "width": 355,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "fill": "#ffffff",
+                      "cornerRadius": 40,
+                      "stroke": { "align": "inside", "thickness": 3, "fill": "#dde6f0" },
+                      "padding": [28, 24],
+                      "children": [
+                        { "type": "text", "id": "dswim-w5t", "fill": "#1e293b", "content": "Fun & Encouraging", "fontFamily": "Inter", "fontSize": 16, "fontWeight": "700" },
+                        { "type": "text", "id": "dswim-w5d", "fill": "#475569", "content": "Positive, patient, pressure-free classes where children learn best.", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 13, "fontWeight": "normal" }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dswim-w6",
+                      "width": 355,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "fill": "#ffffff",
+                      "cornerRadius": 40,
+                      "stroke": { "align": "inside", "thickness": 3, "fill": "#dde6f0" },
+                      "padding": [28, 24],
+                      "children": [
+                        { "type": "text", "id": "dswim-w6t", "fill": "#1e293b", "content": "Flexible Scheduling", "fontFamily": "Inter", "fontSize": 16, "fontWeight": "700" },
+                        { "type": "text", "id": "dswim-w6d", "fill": "#475569", "content": "Weekend and after-school slots to fit busy family routines.", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 13, "fontWeight": "normal" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dswim-testimonials",
+          "name": "Testimonials",
+          "clip": true,
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "opacity": 1,
+            "rotation": 125,
+            "center": { "x": 0.5, "y": 0.5 },
+            "size": { "width": 1, "height": 1 },
+            "colors": [
+              { "color": "#050d1a", "position": 0 },
+              { "color": "#0d3d72", "position": 0.5 },
+              { "color": "#0096a0", "position": 1 }
+            ]
+          },
+          "padding": [88, 24],
+          "layout": "vertical",
+          "gap": 40,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dswim-test-head",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                { "type": "text", "id": "dswim-test-l", "fill": "#ffffffa6", "content": "Testimonials", "fontFamily": "Inter", "fontSize": 13, "fontWeight": "700", "letterSpacing": 1.2 },
+                { "type": "text", "id": "dswim-test-ti", "fill": "#ffffff", "content": "What parents say", "fontFamily": "Inter", "fontSize": 34, "fontWeight": "800" }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dswim-test-row",
+              "width": 1112,
+              "gap": 24,
+              "alignItems": "stretch",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dswim-t1",
+                  "width": 355,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "fill": "#ffffff",
+                  "cornerRadius": 24,
+                  "padding": [28, 24],
+                  "stroke": { "align": "inside", "thickness": 1, "fill": "#dde6f0" },
+                  "children": [
+                    { "type": "text", "id": "dswim-t1s", "fill": "#ff6b6b", "content": "★★★★★", "fontFamily": "Inter", "fontSize": 14, "fontWeight": "600" },
+                    { "type": "text", "id": "dswim-t1q", "fill": "#475569", "content": "\"Patient instructors — and asking questions in Mandarin made everything easier for our family.\"", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 14, "fontWeight": "normal" },
+                    { "type": "text", "id": "dswim-t1a", "fill": "#1e293b", "content": "Wei Fang · Parent of 5-year-old", "fontFamily": "Inter", "fontSize": 13, "fontWeight": "600" }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-t2",
+                  "width": 355,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "fill": "#ffffff",
+                  "cornerRadius": 24,
+                  "padding": [28, 24],
+                  "stroke": { "align": "inside", "thickness": 1, "fill": "#dde6f0" },
+                  "children": [
+                    { "type": "text", "id": "dswim-t2s", "fill": "#ff6b6b", "content": "★★★★★", "fontFamily": "Inter", "fontSize": 14, "fontWeight": "600" },
+                    { "type": "text", "id": "dswim-t2q", "fill": "#475569", "content": "\"Both boys love their classes. Teachers explain clearly in Chinese — huge progress in weeks.\"", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 14, "fontWeight": "normal" },
+                    { "type": "text", "id": "dswim-t2a", "fill": "#1e293b", "content": "Li Ming · Parent of two students", "fontFamily": "Inter", "fontSize": 13, "fontWeight": "600" }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dswim-t3",
+                  "width": 355,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "fill": "#ffffff",
+                  "cornerRadius": 24,
+                  "padding": [28, 24],
+                  "stroke": { "align": "inside", "thickness": 1, "fill": "#dde6f0" },
+                  "children": [
+                    { "type": "text", "id": "dswim-t3s", "fill": "#ff6b6b", "content": "★★★★★", "fontFamily": "Inter", "fontSize": 14, "fontWeight": "600" },
+                    { "type": "text", "id": "dswim-t3q", "fill": "#475569", "content": "\"Our teen beginner never felt embarrassed — encouraging, well-paced teen class.\"", "lineHeight": 1.65, "fontFamily": "Inter", "fontSize": 14, "fontWeight": "normal" },
+                    { "type": "text", "id": "dswim-t3a", "fill": "#1e293b", "content": "Chen Jing · Parent of 13-year-old", "fontFamily": "Inter", "fontSize": 13, "fontWeight": "600" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
           "id": "dswim-contact",
           "name": "Contact",
           "clip": true,
